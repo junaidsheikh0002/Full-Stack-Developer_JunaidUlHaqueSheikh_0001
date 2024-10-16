@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Junaid Ul Haque Sheikh - Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Junaid Ul Haque Sheikh, a Full Stack Developer specializing in innovative web solutions.">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-pY1G5f1Hx7bVtvm2GfJVQYnlXoxXkLLTtJNfXqDRUhoPpiHvyhN+ic6SST2JY8iD8Eje6u1GyrWl6PaqbUcI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Fonts (Optional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="container nav">
+            <h1 class="logo">Junaid Ul Haque Sheikh</h1>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container main-content">
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="profile-picture">
+                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/junaid-picture-0001-HVSvbATRmqHmsO7plzqwvPg1i9gMyC.png" alt="Junaid Ul Haque Sheikh" class="rounded-full">
+            </div>
+            <h2 class="section-title">Full Stack Developer</h2>
+            <p class="section-description">
+                Passionate about creating innovative web solutions. With expertise in both front-end and back-end technologies, I bring ideas to life through clean, efficient, and scalable code.
+            </p>
+            <div class="social-buttons">
+                <a href="https://github.com/junaidsheikh0002" target="_blank" class="btn btn-github">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/junaid-ul-haque-sheikh-s-o-96ab982b2/" target="_blank" class="btn btn-linkedin">
+                    <i class="fab fa-linkedin-in"></i> LinkedIn
+                </a>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section id="advantages" class="section advantages-section">
+            <h2 class="section-title">My Advantages</h2>
+            <div class="advantages-grid">
+                <div class="card advantage-card">
+                    <span class="icon">💡</span>
+                    <h3>Innovative Solutions</h3>
+                </div>
+                <div class="card advantage-card">
+                    <span class="icon">🚀</span>
+                    <h3>Fast Development</h3>
+                </div>
+                <div class="card advantage-card">
+                    <span class="icon">🛠️</span>
+                    <h3>Custom Tailored</h3>
+                </div>
+                <div class="card advantage-card">
+                    <span class="icon">🔒</span>
+                    <h3>Secure Code</h3>
+                </div>
+                <div class="card advantage-card">
+                    <span class="icon">🔧</span>
+                    <h3>Ongoing Support</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>React</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <span class="percentage">90%</span>
+                </div>
+                <div class="skill-card">
+                    <h3>Node.js</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <span class="percentage">85%</span>
+                </div>
+                <div class="skill-card">
+                    <h3>TypeScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                    <span class="percentage">80%</span>
+                </div>
+                <div class="skill-card">
+                    <h3>MongoDB</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                    <span class="percentage">75%</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="card project-card">
+                    <h3>E-commerce Platform</h3>
+                    <p>A full-stack MERN application for online shopping.</p>
+                    <div class="code-snippet">
+                        <pre><code>
+// React component example
+import React from 'react';
+import { useProducts } from './hooks/useProducts';
+
+const ProductList = () => {
+  const { products, loading } = useProducts();
+
+  if (loading) return <div>Loading...</div>;
+
+  return (
+    <div className="product-grid">
+      {products.map(product => (
+        <ProductCard key={product.id} product={product} />
+      ))}
+    </div>
+  );
+};
+
+export default ProductList;
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <h3>Task Management App</h3>
+                    <p>A React-based application for managing daily tasks and to-dos.</p>
+                    <div class="code-snippet">
+                        <pre><code>
+// Node.js API route example
+const express = require('express');
+const router = express.Router();
+const Task = require('../models/Task');
+
+router.post('/tasks', async (req, res) => {
+  try {
+    const task = new Task(req.body);
+    await task.save();
+    res.status(201).send(task);
+  } catch (error) {
+    res.status(400).send(error);
+  }
+});
+
+module.exports = router;
+                        </code></pre>
+                    </div>
+                </div>
+                <div class="card project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive portfolio showcasing my projects and skills.</p>
+                    <div class="code-snippet">
+                        <pre><code>
+// CSS example
+.project-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-card">
+                <a href="mailto:your.email@example.com" class="btn btn-email">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="tel:+1234567890" class="btn btn-phone">
+                    <i class="fas fa-phone"></i> Call Me
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2024 Junaid Ul Haque Sheikh. All rights reserved.</p>
+            <p>Full Stack Developer | Bringing Ideas to Life</p>
+            <div class="footer-socials">
+                <a href="https://github.com/yourusername" target="_blank" class="footer-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="footer-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:your.email@example.com" class="footer-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="tel:+1234567890" class="footer-icon">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
